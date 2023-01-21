@@ -63,6 +63,7 @@
     "react-i18next": "11.4.0",
     "react-native": "0.69.6",
     "react-native-collapsible": "1.5.2",
+    "react-native-divider": "^1.0.3",
     "react-native-gesture-handler": "2.5.0",
     "react-native-globalize": "4.5.1",
     "react-native-keyboard-aware-scroll-view": "0.9.5",

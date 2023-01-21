@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from "react";
 import moment, { Moment } from "moment";
 import { useSelector } from "react-redux";
+import Divider from "react-native-divider";
 import { View } from "react-native";
 import { TransportType } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
@@ -335,6 +336,8 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
           ecoScore={ecoScore}
         />
       ) : null}
+
+      <Divider>Customize</Divider>
 
       {emissionType != EmissionType.productScanned && (
         <TextInput

@@ -43,6 +43,77 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         Custom
       </Text.Primary>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 24,
+          "marginVertical": 6,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 1,
+              "height": 24,
+              "transform": Array [
+                Object {
+                  "translateY": -12,
+                },
+              ],
+            },
+            Object {
+              "borderColor": "#e8e8e8",
+            },
+            false,
+            Object {
+              "width": 20,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 16,
+              "fontWeight": "500",
+              "paddingHorizontal": 24,
+            },
+            Object {
+              "color": "rgba(0,0,0,.85)",
+            },
+          ]
+        }
+      >
+        Customize
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 1,
+              "height": 24,
+              "transform": Array [
+                Object {
+                  "translateY": -12,
+                },
+              ],
+            },
+            Object {
+              "borderColor": "#e8e8e8",
+            },
+            false,
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
     <TextInput
       isOptional={true}
       onChangeText={[Function]}
