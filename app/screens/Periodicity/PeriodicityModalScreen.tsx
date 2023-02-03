@@ -6,7 +6,8 @@ import { useRoute } from "@react-navigation/core";
 
 import { NavStatelessComponent, PeriodicityType } from "interfaces";
 import { Button, Text } from "components";
-import ClickableTag from "components/ClickableTag";
+// import ClickableTag from "components/ClickableTag";
+import ClickableTag2 from "components/ClickableTag2";
 import { t } from "utils";
 import { WEEK_DAYS } from "constant/weekDays";
 
@@ -66,7 +67,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
       <View style={styles.tagSection}>
         <Text.H3>{t("PERIODICITY_MODAL_SCREEN_OFTEN")}</Text.H3>
         <View style={styles.tagsContainer}>
-          <ClickableTag
+          <ClickableTag2
             isSelected={periodType === PeriodicityType.monthly}
             onPress={() => {
               setPeriodType(PeriodicityType.monthly);
@@ -74,7 +75,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
             text={t("PERIODICITY_MODAL_SCREEN_MONTHLY")}
           />
 
-          <ClickableTag
+          <ClickableTag2
             isSelected={periodType === PeriodicityType.weekly}
             onPress={() => {
               setPeriodType(PeriodicityType.weekly);
@@ -89,7 +90,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
           <View style={styles.tagsContainer}>
             {WEEK_DAYS.map(({ dayIndex, nameKey }) => {
               return (
-                <ClickableTag
+                <ClickableTag2
                   key={dayIndex}
                   isSelected={weekDays.includes(dayIndex)}
                   onPress={() => {
@@ -106,7 +107,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
         <Text.H3>{t("PERIODICITY_MODAL_SCREEN_OCCURRENCES")}</Text.H3>
         <View style={styles.tagsContainer}>
           {TIMES_LIST.map((_, index) => (
-            <ClickableTag
+            <ClickableTag2
               key={index}
               isSelected={periodTimes === index + 1}
               onPress={() => {
