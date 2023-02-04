@@ -38,7 +38,7 @@ exports[`renders selected ClickableTag 1`] = `
         ]
       }
     >
-      <Text.Primary
+      <Text.Secondary
         style={
           Array [
             Object {
@@ -53,7 +53,7 @@ exports[`renders selected ClickableTag 1`] = `
         }
       >
         Selected
-      </Text.Primary>
+      </Text.Secondary>
     </View>
   </View>
 </RNGestureHandlerButton>
@@ -97,7 +97,7 @@ exports[`renders unselected ClickableTag 1`] = `
         ]
       }
     >
-      <Text.Primary
+      <Text.Secondary
         style={
           Array [
             Object {
@@ -112,7 +112,7 @@ exports[`renders unselected ClickableTag 1`] = `
         }
       >
         Unselected
-      </Text.Primary>
+      </Text.Secondary>
     </View>
   </View>
 </RNGestureHandlerButton>
